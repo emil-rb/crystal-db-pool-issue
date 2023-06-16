@@ -27,3 +27,7 @@ Look into `src/main.cr` for details.
 This spawns a lot of fibers making db queries and collects the counts (via another fiber). Usually 1-5 fibers go "missing" and never send on the channel. Of cource, if we skip the DB access everything adds up. Look into `src/inmem.cr` for details. 
 
 Use `make inmem` to run it.
+
+## (Optional)
+
+Install [watchexec](https://github.com/watchexec/watchexec) to speed up iterations by using the `make watch-*` commands.
