@@ -10,8 +10,12 @@ targets:
 
 crystal: 1.8.2
 dependencies:
+  db:
+    github: crystal-lang/crystal-db
+    branch: master
   pg:
     github: will/crystal-pg
+    version: ~> 0.26.0
   kemal:
     github: kemalcr/kemal
     

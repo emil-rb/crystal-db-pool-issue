@@ -6,7 +6,7 @@ shards:
 
   db:
     git: https://github.com/crystal-lang/crystal-db.git
-    version: 0.11.0
+    version: 0.11.0+git.commit.65b926c926c8511274992eb79849cecdc98cf337
 
   exception_page:
     git: https://github.com/crystal-loot/exception_page.git

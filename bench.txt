@@ -5,4 +5,4 @@ Licensed to The Apache Software Foundation, http://www.apache.org/
 Benchmarking 127.0.0.1 (be patient)
 Completed 100 requests
 apr_pollset_poll: The timeout specified has expired (70007)
-Total of 197 requests completed
+Total of 196 requests completed
