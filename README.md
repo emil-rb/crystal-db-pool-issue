@@ -1,6 +1,6 @@
 # Issue
 
-The goal of this is to showcase a weird case in Crystal's db pool handling. Under load the when actively using the pool some fiber "disappear". I assume they are blocked somewhere. We provide two reproductions - one using a simple web interface and load tested using ab (Apache Benchmark) and one using a simple script that just spawns a bunch of fibers and tries to use the pool.
+The goal of this code is to showcase a weird case in Crystal's db pool handling. Under load, when actively using the pool some fibers "disappear". We assume they are blocked somewhere. Two reproductions are provided - one using a simple web interface and load tested using `ab` (Apache Benchmark) and one using a simple script that just spawns a bunch of fibers and tries to use the pool.
 
 > This only happens when fiddling with the `max_idle_pool_size` param. In this example we want a fixed pool. See `src/db.cr` for details.
 
